@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,100&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Coming Soon: Pelindo Bersatu</title>
+</head>
+
+<body>
+    <!-- countdown -->
+    <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center" style="z-index: -1;">
+        <div class="c-bg-black rounded" id="countdown">
+        </div>
+    </div>
+    <!-- ./countdown -->
+
+    <!-- comingsoon -->
+    <div class="title-coming-soon">
+        <p class="text-coming">COMING</p>
+        <br>
+        <p class="text-soon">SOON</p>
+    </div>
+    <!-- comingsoon -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-12 col-lg-3" id="socialmedia">
+                    <div class="row d-flex mx-4 mx-lg-0">
+                        <div class="col ">
+                            <a href="http://www.facebook.com/"><img src="assets/icons/facebook.png" class="w-75" /></a>
+                        </div>
+                        <div class="col">
+                            <a href="http://www.instagram.com/"><img src="assets/icons/instagram.png" class="w-75" /></a>
+                        </div>
+                        <div class="col">
+                            <a href="http://www.youtube.com/"><img src="assets/icons/youtube.png" class="w-75" /></a>
+                        </div>
+                        <div class="col">
+                            <a href="http://twitter.com/"><img src="assets/icons/twitter.png" class="w-75" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ./footer -->
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 1, 2021 00:00:00").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Output the result in an element with id="demo"
+            document.getElementById("countdown").innerHTML =
+            `
+            <div class="row">
+                <p class="text-center text-white fs-5"> <b> # PELINDO BERSATU </b></p>
+                <p class="text-center text-white fs-5">1 Oktober 2021</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <p class="text-center text-white fs-6 p-0">HARI</p>
+                    </div>
+                    <div class="row">
+                        <div class="col ">
+                            <div class="rounded p-1">
+                                <p class="fw-bold bg-white my-auto fs-5 text-center rounded">${days}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <p class="text-center text-white fs-6 p-0">JAM</p>
+                    </div>
+                    <div class="row">
+                        <div class="col ">
+                            <div class="rounded p-1">
+                                <p class="fw-bold bg-white my-auto fs-5 text-center rounded">${hours}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <p class="text-center text-white fs-6 p-0">MENIT</p>
+                    </div>
+                    <div class="row">
+                        <div class="col ">
+                            <div class="rounded p-1">
+                                <p class="fw-bold bg-white my-auto fs-5 text-center rounded">${minutes}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <p class="text-center text-white fs-6 p-0">DETIK</p>
+                    </div>
+                    <div class="row">
+                        <div class="col ">
+                            <div class="rounded p-1">
+                                <p class="fw-bold bg-white my-auto fs-5 text-center rounded">${seconds}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `
+            // days + "d " + hours + "h " +
+            // minutes + "m " + seconds + "s ";
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
