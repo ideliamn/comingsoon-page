@@ -1,56 +1,61 @@
 body {
-  font-family: 'Raleway';
-  background-image: url("assets/images/ourfiles_bg 1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #0873bb;
+    font-family: 'Pragmatica', arial;
+    background-color: #0873BB;
 }
 
-#countdown {
-  margin-top: 20px;
-  background-color: #262626;
-  width: 800px;
-  padding-right: 50px;
-  padding-bottom: 40px;
-  padding-left: 50px;
-  padding-top: 20px;
-}
-
-#socialmedia {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+.time-box {
+    margin: 0px 5px 0px 5px;
 }
 
 .title-coming-soon {
-  /* float: right!important; */
-  text-align: center;
-  /* margin-right: 60px; */
-  /* margin-top: 16px; */
-  position: absolute;
-  top: 15px;
-  right: 10px;
+    text-align: center;
 }
 
 .title-coming-soon p {
-  display: inline-block;
+    display: inline-block;
 }
 
 .text-coming {
-  margin: 0 0 0 0;
-  font-weight: bold;
-  /* font-size: 40px; */
-  font-size: 2.5vw;
-  letter-spacing: 8px;
-  color: #FFFFFF;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
+    margin: 0 0 0 0;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 8px;
+    color: #FFFFFF;
 }
 
 .text-soon {
-  margin: 0 0 0 0;
-  font-weight: bold;
-  /* font-size: 60px; */
-  font-size: 4.5vw;
-  color: #FFFFFF;
+    margin: 0 0 0 0;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #FFFFFF;
+}
+
+.text-time {
+    font-size: 1.25rem!important;
+}
+
+.number-time {
+    font-size: 3.5rem!important;
+}
+
+.social-media {
+    margin: 3vw 20vw 0vw 3vw;
+}
+
+.social-media-icon {
+    margin: 0px 5px 0px 5px;
+    max-width: 10%;
+    height: auto;
+}
+
+.footer-logo-long {
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+.vector-side {
+    max-height: 500px;
+    margin-bottom: 2vw;
+    min-width: 100px;
+    padding-left: 55vw;
 }

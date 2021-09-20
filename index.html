@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,100&display=swap"
         rel="stylesheet">
-
+    <link href="https://allfont.net/allfont.css?fonts=pragmatica" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,45 +25,40 @@
 </head>
 
 <body>
-    <!-- countdown -->
-    <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center" style="z-index: -1;">
-        <div class="c-bg-black rounded" id="countdown">
-        </div>
-    </div>
-    <!-- ./countdown -->
 
-    <!-- comingsoon -->
-    <div class="title-coming-soon">
-        <p class="text-coming">COMING</p>
-        <br>
-        <p class="text-soon">SOON</p>
-    </div>
-    <!-- comingsoon -->
+    <div class="container">
 
-    <!-- footer -->
-    <footer class="footer">
-        <div class="container-fluid ">
-            <div class="row">
-                <div class="col-12 col-lg-3" id="socialmedia">
-                    <div class="row d-flex mx-4 mx-lg-0">
-                        <div class="col ">
-                            <a href="http://www.facebook.com/"><img src="assets/icons/facebook.png" class="w-75" /></a>
-                        </div>
-                        <div class="col">
-                            <a href="http://www.instagram.com/"><img src="assets/icons/instagram.png" class="w-75" /></a>
-                        </div>
-                        <div class="col">
-                            <a href="http://www.youtube.com/"><img src="assets/icons/youtube.png" class="w-75" /></a>
-                        </div>
-                        <div class="col">
-                            <a href="http://twitter.com/"><img src="assets/icons/twitter.png" class="w-75" /></a>
-                        </div>
-                    </div>
-                </div>
+        <div class="position-absolute top-0 start-0">
+            <div class="social-media">
+                    <a href="http://twitter.com/"><img src="assets/twitter (1) 1.png" class="social-media-icon"></a>
+                    <a href="http://facebook.com/"><img src="assets/facebook (1) 1.png" class="social-media-icon"></a>
+                    <a href="http://instagram.com/"><img src="assets/IG 1.png" class="social-media-icon"></a>
+                    <a href="http://youtube.com/"><img src="assets/youtube 1.png" class="social-media-icon"></a>
             </div>
         </div>
-    </footer>
-    <!-- ./footer -->
+
+        <!-- countdown -->
+        <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center" style="z-index: -1; margin: 0px 50px 0px 50px;">
+            <div id="countdown">
+
+            </div>
+            <img src="assets/Line 51.png" class="img-fluid" style="max-width: 30vw; min-width: 25vw;">
+            <hr style="color: white;">
+            <div class="title-coming-soon">
+                <p class="text-coming">COMING</p>
+                <br>
+                <p class="text-soon">SOON</p>
+            </div>
+        </div>
+        <!-- ./countdown -->
+
+        <div class="position-absolute bottom-0 start-0">
+            <img src="assets/Group 2428.png" class="footer-logo-long">
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+            <img src="assets/Vector (2).png" class="img-fluid vector-side">
+        </div>
+    </div>
 
     <script>
         // Set the date we're counting down to
@@ -81,58 +76,54 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             // Output the result in an element with id="demo"
             document.getElementById("countdown").innerHTML =
-            `
+                `
             <div class="row">
-                <p class="text-center text-white fs-5"> <b> # PELINDO BERSATU </b></p>
-                <p class="text-center text-white fs-5">1 Oktober 2021</p>
-            </div>
-            <div class="row">
-                <div class="col">
+                <div class="col" style="margin: 0px 5px 0px 5px;">
                     <div class="row">
-                        <p class="text-center text-white fs-6 p-0">HARI</p>
+                        <div class="col">
+                            <!-- <div class="p-1"> -->
+                                <p class="fw-bold my-auto fs-5 text-center rounded text-white number-time">${days}</p>
+                            <!-- </div> -->
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col ">
-                            <div class="rounded p-1">
-                                <p class="fw-bold bg-white my-auto fs-5 text-center rounded">${days}</p>
-                            </div>
-                        </div>
+                        <p class="text-center text-white fs-6 p-0 text-time">Days</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" style="margin: 0px 5px 0px 5px;">
                     <div class="row">
-                        <p class="text-center text-white fs-6 p-0">JAM</p>
+                        <div class="col">
+                            <!-- <div class="p-1"> -->
+                                <p class="fw-bold my-auto fs-5 text-center rounded text-white number-time">${hours}</p>
+                            <!-- </div> -->
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col ">
-                            <div class="rounded p-1">
-                                <p class="fw-bold bg-white my-auto fs-5 text-center rounded">${hours}</p>
-                            </div>
-                        </div>
+                        <p class="text-center text-white fs-6 p-0 text-time">Hours</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" style="margin: 0px 5px 0px 5px;">
                     <div class="row">
-                        <p class="text-center text-white fs-6 p-0">MENIT</p>
+                        <div class="col">
+                            <!-- <div class="p-1"> -->
+                                <p class="fw-bold my-auto fs-5 text-center rounded text-white number-time">${minutes}</p>
+                            <!-- </div> -->
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col ">
-                            <div class="rounded p-1">
-                                <p class="fw-bold bg-white my-auto fs-5 text-center rounded">${minutes}</p>
-                            </div>
-                        </div>
+                        <p class="text-center text-white fs-6 p-0 text-time">Minutes</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" style="margin: 0px 5px 0px 5px;">
                     <div class="row">
-                        <p class="text-center text-white fs-6 p-0">DETIK</p>
+                        <div class="col"">
+                            <!-- <div class="p-1"> -->
+                                <p class="fw-bold my-auto fs-5 text-center rounded text-white number-time">${seconds}</p>
+                            <!-- </div> -->
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col ">
-                            <div class="rounded p-1">
-                                <p class="fw-bold bg-white my-auto fs-5 text-center rounded">${seconds}</p>
-                            </div>
-                        </div>
+                        <p class="text-center text-white fs-6 p-0 text-time">Second</p>
                     </div>
                 </div>
             </div>
