@@ -1,6 +1,13 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Pragmatica', arial;
     background-color: #0873BB;
+    background-image: url("assets/Ornamen\ 3.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .time-box {
