@@ -5,7 +5,7 @@ html {
 body {
     font-family: 'Pragmatica', arial;
     background-color: #0873BB;
-    background-image: url("assets/Ornamen\ 3.png");
+    background-image: url(../images/Ornamen3.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -22,18 +22,17 @@ body {
     display: inline-block;
 }
 
-.text-coming {
+.text-coming-soon {
     margin: 0 0 0 0;
     font-weight: bold;
-    font-size: 2rem;
-    letter-spacing: 8px;
+    font-size: 1.2rem;
     color: #FFFFFF;
 }
 
-.text-soon {
+.text-pelindo {
     margin: 0 0 0 0;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 2.75rem;
     color: #FFFFFF;
 }
 
@@ -45,11 +44,11 @@ body {
     font-size: 3.5rem!important;
 }
 
-.social-media {
-    margin: 3vw 20vw 0vw 3vw;
+.logo-pelindo-row {
+    margin: 1vw 0vw 0vw 1vw;
 }
 
-.social-media-icon {
+.logo-pelindo {
     margin: 0px 5px 0px 5px;
     max-width: 10%;
     height: auto;
@@ -66,3 +65,9 @@ body {
     min-width: 100px;
     padding-left: 55vw;
 }
+
+/* @media only screen and (max-width: 50px) { */
+    /* .hours-break { */
+        /* width: 100%!important; */
+    /* } */
+/* } */
